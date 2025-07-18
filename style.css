@@ -1,0 +1,155 @@
+/* Font principal și fundal */
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background-color: #fffdf6;
+  color: #2f2f2f;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff9ec !important;
+  border-bottom: 2px solid #e3c48e;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #c0392b !important;
+  font-size: 1.6rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #444 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c0392b !important;
+}
+
+#toggle-lang {
+  border-radius: 20px;
+}
+
+/* Hero cu slider */
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Imagini slider - ocupa tot ecranul */
+.hero-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Textul fix peste slider */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  max-width: 700px;
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
+  background: rgba(0,0,0,0.35);
+  padding: 20px 25px;
+  border-radius: 15px;
+  user-select: none;
+  pointer-events: none; /* ca să nu blocheze click pe buton */
+}
+
+.hero-text .btn {
+  pointer-events: auto; /* dar butonul să poată fi clicat */
+}
+
+/* Titlu și paragraf din hero */
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Carduri */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  object-fit: contain;
+  height: 160px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #c0392b;
+}
+
+/* Secțiuni */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #b32d00;
+}
+
+/* Butoane */
+.btn-warning {
+  background-color: #f39c12;
+  border: none;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.btn-warning:hover {
+  background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+  background-color: #2c2c2c;
+  color: #f8f8f8;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .card img {
+    height: 140px;
+  }
+}
